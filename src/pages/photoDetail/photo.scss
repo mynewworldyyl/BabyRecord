@@ -1,0 +1,35 @@
+photo{
+  background-color: black;
+  ion-card {
+    position: relative;
+    text-align: start;
+    width:100%;
+  }
+  .card-address {
+    position: absolute;
+    top: 2px;
+    font-size: 1.0em;
+    width: 100%;
+    font-weight: normal;
+    color: #fff;
+  }
+
+  .album-title {
+    position: absolute;
+    top: 20px;
+    font-size: 1.0em;
+    width: 100%;
+    font-weight: normal;
+    color: #fff;
+  }
+
+  .card-time {
+    font-size: 1.0em;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    color: #fff;
+  }
+
+}
+

@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Taker
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="mainMenu()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <ion-list>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>专辑</ion-label>
+          <ion-select [(ngModel)]="mainData.albumId">
+            <ion-option *ngFor="let n of albumList" value="{{n.id}}">{{n.name}}</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <button (click)="createAlbum('larger')" ion-item detail-none class="text-button text-larger">新建</button>
+      </ion-col>
+    </ion-row>
+
+    <ion-item>
+      <ion-label stacked>标题</ion-label>
+      <ion-input type="text" name="title" [(ngModel)]="mainData.title" (change)="change=true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>描述</ion-label>
+      <ion-textarea name="desc" [(ngModel)]="mainData.desc" (change)="change=true"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>地址</ion-label>
+      <ion-input type="text" name="address" [(ngModel)]="mainData.address" (change)="change=true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>时间</ion-label>
+      <ion-input type="text" name="creationDate" [(ngModel)]="mainData.creationDate" (change)="change=true"></ion-input>
+    </ion-item>
+
+    <!--<ion-item>
+      <button ion-button color="secondary" outline (click)="takePhoto(true)">封面</button>
+    </ion-item>
+    <ion-item>
+        <img *ngIf="mainData.photoURL.endsWith('jpg')|| mainData.photoURL.endsWith('jpeg')"  [src]="mainData.photoURL | cdvphotolibrary"/>
+        <video  *ngIf="mainData.photoURL.endsWith('mp4')" width="320" height="240" controls webkit-playsinline>
+          <source [src]="mainData.photoURL | cdvphotolibrary" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </ion-item>-->
+
+    <ion-item>
+      <button ion-button color="secondary" outline (click)="takePhoto()">媒体</button>
+    </ion-item>
+
+    <ion-item *ngFor="let item of datas" (click)="setAsFirstPage($event,item)">
+        <album-image *ngIf="item.photoURL.endsWith('jpg')|| item.photoURL.endsWith('jpeg')" [it]="item"
+                     [hiddenDesc]="false" [hiddenActBar]="true" [canView]="false"></album-image>
+        <!--<img *ngIf="item.photoURL.endsWith('jpg')|| item.photoURL.endsWith('jpeg')"  [src]="item.photoURL | cdvphotolibrary"/>-->
+        <video  *ngIf="item.photoURL.endsWith('mp4')" width="320" height="240" controls webkit-playsinline>
+          <source [src]="item.photoURL | cdvphotolibrary" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </ion-item>
+
+
+  </ion-list>
+
+</ion-content>

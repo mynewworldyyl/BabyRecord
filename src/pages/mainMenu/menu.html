@@ -1,0 +1,38 @@
+<ion-menu [content]="content" id="mainMenu">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Main Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button ion-item menuClose  detail-none (click)="openPage(taker)">
+        <ion-icon name='camera'></ion-icon>
+        Taker
+      </button>
+      <button ion-item  menuClose    detail-none (click)="openPage(map)">
+        <ion-icon name='map'></ion-icon>
+        Map
+      </button>
+      <button ion-item  menuClose    detail-none (click)="openPage(notepad)">
+        <ion-icon name='document'></ion-icon>
+        Notepad
+      </button>
+      <button ion-item  menuClose    detail-none (click)="openPage(setting)">
+        <ion-icon name='hammer'></ion-icon>
+        Setting
+      </button>
+      <button ion-item   menuClose   detail-none (click)="openPage(test)">
+        <ion-icon name='analytics'></ion-icon>
+        Test
+      </button>
+      <button ion-item  menuClose   detail-none (click)="openPage(about)">
+        <ion-icon name='baseball'></ion-icon>
+        About
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="album" #content swipeBackEnabled="true"></ion-nav>

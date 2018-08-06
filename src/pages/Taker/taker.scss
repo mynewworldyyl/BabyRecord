@@ -1,0 +1,23 @@
+taker {
+
+  .div{
+    height: 100%;
+    width: 100%;
+  }
+
+  .floatDiv {
+    border:1px solid green;
+    div{
+      float: right; margin:2px; border:1px dotted red; width: 100px; height: 100px;
+    }
+  }
+
+  .positionDiv{
+    position:relative;  top: 110px;border:1px solid green;
+  }
+  .positionDiv {
+    div{
+      position:absolute ; margin:2px; border:1px dotted red; width: 100px; height: 100px;
+    }
+  }
+}

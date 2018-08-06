@@ -1,0 +1,24 @@
+EditAlbum{
+  ion-card1 {
+    position: relative;
+    text-align: start;
+  }
+
+  .card-title1 {
+    position: absolute;
+    top: 10px;
+    font-size: 1.0em;
+    width: 100%;
+    font-weight: normal;
+    color: #fff;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    color: #fff;
+  }
+}
+
