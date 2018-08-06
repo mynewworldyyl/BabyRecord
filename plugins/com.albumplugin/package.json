@@ -1,0 +1,57 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "D:\\opensource\\ionic\\new-ionic3-angular4\\albumplugin",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "D:\\opensource\\ionic\\new-ionic3-angular4\\albumplugin",
+        "spec": "D:\\opensource\\ionic\\new-ionic3-angular4\\albumplugin",
+        "type": "directory"
+      },
+      "D:\\opensource\\ionic\\new-ionic3-angular4"
+    ]
+  ],
+  "_from": "albumplugin",
+  "_id": "com.albumplugin@1.0.0",
+  "_inCache": true,
+  "_location": "/com.albumplugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "D:\\opensource\\ionic\\new-ionic3-angular4\\albumplugin",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "D:\\opensource\\ionic\\new-ionic3-angular4\\albumplugin",
+    "spec": "D:\\opensource\\ionic\\new-ionic3-angular4\\albumplugin",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "file:albumplugin",
+  "_shasum": "4937c282dc7f1dc44edcad4fcad3de5ff82c6d88",
+  "_shrinkwrap": null,
+  "_spec": "D:\\opensource\\ionic\\new-ionic3-angular4\\albumplugin",
+  "_where": "D:\\opensource\\ionic\\new-ionic3-angular4",
+  "author": "",
+  "cordova": {
+    "id": "com.albumplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "ISC",
+  "name": "com.albumplugin",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "version": "1.0.0"
+}

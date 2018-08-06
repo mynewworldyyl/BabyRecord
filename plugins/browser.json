@@ -1,0 +1,55 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.myalbum"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.myalbum"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.myalbum"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.myalbum"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.myalbum"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.myalbum"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "com.myalbum"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.myalbum"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.myalbum"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.myalbum"
+    },
+    "com.synconset.imagepicker": {
+      "PACKAGE_NAME": "com.myalbum"
+    },
+    "cordova-plugin-mediapicker-dmcbig": {
+      "PACKAGE_NAME": "com.myalbum"
+    },
+    "com.albumplugin": {
+      "PACKAGE_NAME": "com.myalbum"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.myalbum"
+    }
+  }
+}
